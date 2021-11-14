@@ -1,0 +1,14 @@
+.cardContainer2{
+    border:1px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 450px;
+    box-shadow: 1px 1px 1px gray;
+
+}
+.bookNow2{
+    background:#51050F;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+}

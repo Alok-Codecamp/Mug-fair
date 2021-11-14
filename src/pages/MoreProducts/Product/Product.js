@@ -1,0 +1,31 @@
+import React from 'react';
+import { useHistory } from 'react-router';
+import './product.css'
+
+
+const Product = ({product}) => {
+    const history=useHistory();
+    const {_id,name,price,imgUrl,description,rating}=product;
+    const handleBookNow=(id)=>{
+        history.push(`/buynow/${id}`);
+    }
+    return (
+        <>
+        
+        <div className="cardContainer">
+           <div>
+               <img style={{width:'100px',height:'100px'}} src={imgUrl}/>
+           </div>
+           <div>
+               <h3>{name}</h3>
+               <p>Price: {price}</p>
+               <p>Ratings: {rating}</p>
+               <p>{description?.slice(0,100)}</p>
+               <button onClick={()=>handleBookNow(_id)} className="buyNow">Book Now</button>
+           </div>
+        </div>
+        </>
+    );
+};
+
+export default Product;
