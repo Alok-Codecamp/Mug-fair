@@ -7,7 +7,7 @@ const MyOrders = () => {
         const {user}=useAuth();
 
         useEffect(()=>{
-            fetch(`http://localhost:5000/order/${user.email}`)
+            fetch(`https://morning-wildwood-92254.herokuapp.com/order/${user.email}`)
             .then(res=>res.json())
             .then(data=>setMyAllOrders(data))
         },[])
@@ -15,7 +15,7 @@ const MyOrders = () => {
         const handleCancleOrder=(id)=>{
             const confirmation=window.confirm('confirm delete');
             if(confirmation){
-                fetch(`http://localhost:5000/order/${id}`,{
+                fetch(`https://morning-wildwood-92254.herokuapp.com/order/${id}`,{
                     method:'DELETE'
                 })
                 .then(res=>res.json())

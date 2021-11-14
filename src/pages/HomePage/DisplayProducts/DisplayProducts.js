@@ -6,7 +6,7 @@ import Header from '../../Shared/Header/Header'
 const DisplayProducts = () => {
     const [displayProducts, setDisplayProducts]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/mugs')
+        fetch('https://morning-wildwood-92254.herokuapp.com/mugs')
         .then(res=>res.json())
         .then(data=>setDisplayProducts(data))
     },[])

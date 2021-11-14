@@ -8,7 +8,7 @@ const [success, setSuccess]=useState(false);
     }
     const handleMakeAdmin=()=>{
         const admin={email:adminEmail};
-        fetch('http://localhost:5000/users',{
+        fetch('https://morning-wildwood-92254.herokuapp.com/users',{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

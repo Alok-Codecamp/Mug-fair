@@ -1,0 +1,19 @@
+.FooterDiv{
+    text-align: left;
+}
+
+.FooterDiv a{
+    
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+
+.FooterDiv h6{
+    
+    margin-top: 20px;
+}
+
+.FooterDiv img{
+    margin-right: 15px;
+}

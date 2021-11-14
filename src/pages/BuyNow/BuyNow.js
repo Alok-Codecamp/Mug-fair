@@ -11,7 +11,7 @@ const BuyNow = () => {
     const {name,imgUrl,description,_id,price,rating}=orderdProduct;
     const {displayName,email}=user;
     useEffect(()=>{
-        const url=`http://localhost:5000/mugs/${id}`
+        const url=`https://morning-wildwood-92254.herokuapp.com/mugs/${id}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setOrderdProduct(data))
@@ -29,7 +29,7 @@ const BuyNow = () => {
       const changdeId={...orderdProduct};
       delete changdeId._id;
       const saveData={...changdeId,email,orderId:_id}
-        fetch('http://localhost:5000/order',{
+        fetch('https://morning-wildwood-92254.herokuapp.com/order',{
           method:'POST',
         headers:{
           'content-type':'application/json'

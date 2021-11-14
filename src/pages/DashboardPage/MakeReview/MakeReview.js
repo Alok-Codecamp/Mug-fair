@@ -18,7 +18,7 @@ const MakeReview = () => {
     //handle make admin 
     const handleMakeReview = () => {
             if(reviewData.rating>=1&&reviewData.rating<=5){
-                fetch('http://localhost:5000/review',{
+                fetch('https://morning-wildwood-92254.herokuapp.com/review',{
                     method:'POST',
                     headers:{
                         'content-type':'application/json'

@@ -16,7 +16,7 @@ const AddProduct = () => {
       }
 
       const handleAddNewProduct=()=>{
-            fetch('http://localhost:5000/mugs',{
+            fetch('https://morning-wildwood-92254.herokuapp.com/mugs',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json'

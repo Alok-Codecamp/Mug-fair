@@ -6,7 +6,7 @@ const ManageAllOrder = () => {
         const [successDelete, setSuccessDelete]=useState(false)
 
         useEffect(()=>{
-            fetch('http://localhost:5000/order')
+            fetch('https://morning-wildwood-92254.herokuapp.com/order')
             .then(res=>res.json())
             .then(data=>setAllOrders(data))
         },[])
@@ -15,7 +15,7 @@ const ManageAllOrder = () => {
         const handleCancleOrder=(id)=>{
             const confirmation=window.confirm('confirm delete');
             if(confirmation){
-                fetch(`http://localhost:5000/order/${id}`,{
+                fetch(`https://morning-wildwood-92254.herokuapp.com/order/${id}`,{
                     method:'DELETE'
                 })
                 .then(res=>res.json())

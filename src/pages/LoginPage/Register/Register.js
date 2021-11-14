@@ -26,7 +26,7 @@ const Register = () => {
     console.log(registerData)
     registerUser(registerData.email,registerData.password,registerData.userName,history,location);
     const userInfo={...registerData,role:'user'}
-    fetch('http://localhost:5000/users',{
+    fetch('https://morning-wildwood-92254.herokuapp.com/users',{
       method:'POST',
       headers:{
         'content-type':'application/json'
