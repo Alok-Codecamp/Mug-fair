@@ -10,7 +10,7 @@ useEffect(()=>{
     .then(data=>setReviews(data))
 },[])
     return (
-        <Box sx={{ flexGrow: 1, marginTop:'80px', marginLeft:'40px',marginRight:'35px'}}>
+        <Box sx={{ flexGrow: 1, marginLeft:'40px',marginRight:'35px'}}>
             
             <Grid container spacing={2} >
             {
