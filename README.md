@@ -1,6 +1,6 @@
 # Mug Fair - E-Commerce Project
 
-# Live Link: https://mug-fair.web.app
+**Live link**: [https://mug-fair.web.app](https://mug-fair.web.app)
 
 Welcome to **Mug Fair**, an online platform where users can order personalized mugs. This project allows users to browse, order mugs, and manage their profiles. It features user authentication, dynamic browsing, and secure ordering with Firebase.
 
